@@ -18,6 +18,7 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.8.1",
     "husky": "^9.0.11"
   }
 }
