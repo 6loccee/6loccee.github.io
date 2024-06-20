@@ -8,7 +8,9 @@
 		"build": "astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"prepare": "husky"
+		"prepare": "husky",
+		"format": "biome format --write",
+		"lint": "biome lint --write"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.7.0",
