@@ -1,19 +1,23 @@
 ---
-import TranslateIcon from '@/icons/TranslateIcon.astro'
+import TranslateIcon from "@/icons/TranslateIcon.astro";
 ---
 
 <header class="flex items-center mt-8">
   <span class="text-2xl font-semibold">loccee</span>
   <nav class="flex justify-end grow">
-    <button class="btn mr-5 px-2 py-1.5 rounded-md bg-[#1c1c1c]">
-      <TranslateIcon/>
+    <a href="" class="btn ml-5 underline decoration-[#10a2f5]"> /about </a>
+    <a href="" class="btn ml-5 underline decoration-[#24d05a]"> /projects </a>
+    <a href="" class="btn ml-5 underline decoration-[#e4002b]"> /skills </a>
+    <button class="btn ml-5 px-4 py-2 rounded-md bg-[#1c1c1c]">
+      <TranslateIcon />
     </button>
-    <a href="" class="btn">
-      About
-    </a>
   </nav>
 </header>
 <style>
+  a {
+    text-decoration-thickness: 0.3ex;
+    text-underline-offset: 0.3ex;
+  }
   .btn {
     display: flex;
     align-items: center;
