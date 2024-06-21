@@ -8,6 +8,8 @@ export default {
         blue: '#10a2f5',
         green: '#24d05a',
         red: '#e4002b',
+        gray: '#1d1d1d',
+        darkGray: '#171717',
       },
     },
   },
