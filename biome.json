@@ -9,6 +9,7 @@
 		}
 	},
 	"javascript": {
+		"globals": ["Astro"],
 		"formatter": {
 			"enabled": true,
 			"arrowParentheses": "asNeeded",
@@ -25,5 +26,8 @@
 		"rules": {
 			"recommended": true
 		}
+	},
+	"organizeImports": {
+		"enabled": true
 	}
 }
