@@ -1,5 +1,6 @@
 ---
-import '@/styles/global.css'
+import Navbar from "@/components/Navbar.astro";
+import "@/styles/global.css";
 ---
 
 <html lang="en">
@@ -10,6 +11,8 @@ import '@/styles/global.css'
 		<title>Martin Aranda ─ Dev</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main class="max-w-2xl m-auto min-h-screen">
+			<Navbar />
+		</main>
 	</body>
 </html>
