@@ -1,27 +1,18 @@
 ---
 import TranslateIcon from "@/icons/TranslateIcon.astro";
+import Navigation from "@/components/Navigation.astro";
 ---
 
 <header class="flex items-center mt-8">
   <span class="text-2xl font-semibold">loccee</span>
   <nav class="flex justify-end grow">
     <div class="md:flex hidden">
-      <a href="" class="btn ml-5 underline decoration-[#10a2f5]"> /about </a>
-      <a href="" class="btn ml-5 underline decoration-[#24d05a]"> /projects </a>
-      <a href="" class="btn ml-5 underline decoration-[#e4002b]"> /skills </a>
+      <Navigation redirect="/about" tailwind="decoration-[#10a2f5]"> /about </Link>
+      <Navigation redirect="/projects" tailwind="decoration-[#24d05a]"> /projects </Link>
+      <Navigation redirect="/skills" tailwind="decoration-[#e4002b]"> /skills </Link>
     </div>
-    <button class="btn ml-5 px-4 py-2 rounded-md bg-[#1c1c1c]">
+    <button class="flex items-center ml-5 px-4 py-2 rounded-md bg-[#1c1c1c]">
       <TranslateIcon />
     </button>
   </nav>
 </header>
-<style>
-  a {
-    text-decoration-thickness: 0.3ex;
-    text-underline-offset: 0.3ex;
-  }
-  .btn {
-    display: flex;
-    align-items: center;
-  }
-</style>

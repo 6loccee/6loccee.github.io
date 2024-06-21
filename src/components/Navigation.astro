@@ -1,0 +1,10 @@
+---
+const { tailwind, redirect } = Astro.props;
+---
+
+<a
+  href={redirect}
+  class={`flex items-center ml-5 underline decoration-2 underline-offset-2 ${tailwind}`}
+>
+  <slot />
+</a>
