@@ -33,6 +33,9 @@
 		"vitest": "^1.6.0"
 	},
 	"lint-staged": {
-		"*.{ts,js,mjs,cjs,astro}": ["biome format --write", "biome lint --write"]
+		"*.{ts,js,mjs,cjs,astro,json}": [
+			"biome format --write",
+			"biome lint --write"
+		]
 	}
 }
