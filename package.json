@@ -11,8 +11,7 @@
 		"astro": "astro",
 		"prepare": "husky",
 		"format": "biome format --write",
-		"lint": "biome lint --write",
-		"test": "vitest"
+		"lint": "biome lint --write"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.7.0",
@@ -29,8 +28,7 @@
 		"@commitlint/cli": "^19.3.0",
 		"@commitlint/config-conventional": "^19.2.2",
 		"husky": "^9.0.11",
-		"lint-staged": "^15.2.7",
-		"vitest": "^1.6.0"
+		"lint-staged": "^15.2.7"
 	},
 	"lint-staged": {
 		"*.{ts,js,mjs,cjs,astro,json}": [

@@ -11,6 +11,9 @@ export default {
         gray: '#1d1d1d',
         darkGray: '#171717',
       },
+      fontFamily: {
+        inter: ['Inter'],
+      },
     },
   },
   plugins: [],

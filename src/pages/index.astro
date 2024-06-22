@@ -1,17 +1,57 @@
 ---
 import Navbar from '@/components/Navbar.astro'
+import Footer from '@/components/Footer.astro'
+import Underline from '@/components/Underline.astro'
+import { calculateAge } from '@/utils/calculateAge'
+
+const age: number = calculateAge('19/04/2007')
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="generator" content={Astro.generator} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Martin Aranda ─ Dev</title>
 	</head>
-	<body class="bg-black text-white">
+	<body class="bg-black text-white font-inter">
 		<main class="max-w-2xl m-auto min-h-screen p-6 pt-6">
 			<Navbar />
+			<div class="[&>p]:mb-4">
+				<h1 class="mt-8 mb-4 text-3xl font-extrabold">About</h1>
+				<p>
+					My name is <Underline>Martin Aranda</Underline>, although my friends
+					call me Ryo. I am an open source developer originally from
+					<Underline>Rancagua, Chile</Underline>, with a strong focus on <Underline color="green">web design and data management</Underline
+					>.
+				</p>
+				<p>
+					I started my journey as a programmer at the age of 10, using my mobile
+					phone to create bots on Discord. Now, at <Underline
+						>{age} years old</Underline
+					>, I am <Underline>finishing school</Underline> and I spend my free time
+					programming to have fun with my friends.
+				</p>
+				<p>
+					One of my personal goals is to be a reference and source of
+					inspiration for fellow programmers. <Underline>I am dedicated to creating
+						projects</Underline> that not only advance open-source standards but also leave a
+					lasting impact on the developer community, setting a new benchmark for
+					innovation.
+				</p>
+				<p>
+					With my first computer and two friends I founded <Underline
+						>Developer House</Underline
+					>, a Discord community dedicated to programming, where I serve as CEO
+					and which had more than 500 active users. This project allowed me to
+					meet new people who contributed to my personal development and as a
+					programmer.
+				</p>
+				<p>
+					I owe everything I have learned to friends and references on the
+					Internet who have significantly influenced my technical training.
+				</p>
+			</div>
+			<Footer />
 		</main>
 	</body>
 </html>
