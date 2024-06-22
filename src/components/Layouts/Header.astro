@@ -1,0 +1,19 @@
+---
+import Navigation from '@/ui/Navigation.astro'
+import SunMon from '@/icons/SunMon.astro'
+import Icon from '@/icons/Icon.astro'
+---
+
+<header class="flex items-center mt-8">
+  <Icon/>
+  <nav class="flex justify-end grow">
+    <div class="md:flex hidden">
+      <Navigation redirect="/about" underlineColor="decoration-blue-500"> /about </Link>
+      <Navigation redirect="/projects" underlineColor="decoration-green-500"> /projects </Link>
+      <Navigation redirect="/skills" underlineColor="decoration-red-500"> /skills </Link>
+    </div>
+    <button class="flex items-center ml-5 px-4 py-2">
+      <SunMon />
+    </button>
+  </nav>
+</header>
