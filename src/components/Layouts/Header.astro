@@ -4,16 +4,35 @@ import SunMon from '@/icons/SunMon.astro'
 import Icon from '@/icons/Icon.astro'
 ---
 
-<header class="flex items-center mt-8">
-  <Icon/>
+<header class="flex items-center mt-8 py-2">
+  <Icon />
   <nav class="flex justify-end grow">
     <div class="md:flex hidden">
-      <Navigation redirect="/about" underlineColor="decoration-blue-500"> /about </Link>
-      <Navigation redirect="/projects" underlineColor="decoration-green-500"> /projects </Link>
-      <Navigation redirect="/skills" underlineColor="decoration-red-500"> /skills </Link>
+      <Navigation redirect="/about" underlineColor="decoration-blue-500">
+        /about
+      </Navigation>
+      <Navigation redirect="/projects" underlineColor="decoration-green-500">
+        /projects
+      </Navigation>
+      <Navigation redirect="/skills" underlineColor="decoration-red-500">
+        /skills
+      </Navigation>
     </div>
-    <button class="flex items-center ml-5 px-4 py-2" aria-label="Theme Toggle">
+    <button
+      id="theme-switch"
+      class="flex items-center ml-5 px-2 transition-transform hover:rotate-12"
+      aria-label="Theme Toggle"
+    >
       <SunMon />
     </button>
   </nav>
 </header>
+<script>
+  const button = document.getElementById('theme-switch') as HTMLButtonElement
+
+  button.addEventListener('click', () => {
+    const htmlElement = document.documentElement
+
+    htmlElement.classList.toggle('dark')
+  });
+</script>
