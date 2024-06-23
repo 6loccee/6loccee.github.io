@@ -13,13 +13,15 @@ const { title, description } = Astro.props
   
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
-  {//<meta name="twitter:image" content="/icon.jpg">
+  <!--  <meta name="twitter:image" content="/icon.jpg"> -->
   
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
-  <meta property="og:image" content="/icon.jpg">
+  <!--  <meta property="og:image" content="/icon.jpg"> -->
   <meta property="og:url" content="https://6loccee.github.io/">
   <meta property="og:type" content="website">
+
+  <meta name="description" content={description}>
   
   
   <link rel="icon" href="/favicon.ico" media="(prefers-color-scheme:no-preference)">
