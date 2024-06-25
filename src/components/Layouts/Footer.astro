@@ -1,13 +1,23 @@
 ---
-import TranslateIcon from '@/icons/TranslateIcon.astro'
+import SpotifyIcon from '@/icons/SpotifyIcon.astro'
+import { getCurrentlyPlayed } from '@/lib/utils'
+
+const currentlyPlaying = await getCurrentlyPlayed(
+  import.meta.env.CLIENT_SPOTIFY_ID,
+  import.meta.env.CLIENT_SPOTIFY_SECRET,
+  import.meta.env.SPOTIFY_REFRESH_TOKEN,
+)
 ---
 
-<footer class="text-xs flex text-center font-mono mt-8 px-4 py-2">
+<footer class="text-xs flex text-center font-mono mt-8 py-2">
   <p class="flex-grow text-left text-secondary-color">
     Developed by
     <a href="https://github.com/6loccee" class="border-b border-underline-color hover:border-underline-hover-color">Martin Aranda</a>
   </p>
-  <div class="flex transition-transform hover:rotate-12">
-    <TranslateIcon />
+  <div class="flex text-center">
+    <SpotifyIcon />
+    <span class="ml-2">
+      {currentlyPlaying ? currentlyPlaying : 'Not playing – Spotify'}
+    </span>
   </div>
 </footer>
