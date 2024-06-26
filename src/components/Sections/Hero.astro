@@ -1,11 +1,12 @@
 ---
 import Underline from '@/ui/Underline.astro'
+import Title from '@/ui/Title.astro'
 import { calculateAge } from '@/lib/utils.ts'
 
 const age: number = calculateAge('19/04/2007')
 ---
 <div class="[&>p]:mb-4">
-  <h1 class="mt-8 mb-4 text-3xl font-extrabold">About</h1>
+  <Title>About</Title>
   <p>
     My name is <Underline bgColor="bg-blue-600">Martin Aranda</Underline>, although my friends call
     me Ryo. I am an open source developer originally from
