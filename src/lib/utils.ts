@@ -1,4 +1,9 @@
-import { SpotifyApi } from '@spotify/web-api-ts-sdk'
+import { SpotifyApi, type PlaybackState } from '@spotify/web-api-ts-sdk'
+
+interface Track {
+  name: string
+  artists: { name: string }[]
+}
 
 export function calculateAge(dateOfBirthStr: string): number {
   const dateParts = dateOfBirthStr.split('/')
@@ -48,16 +53,21 @@ export async function getCurrentlyPlayed(
   refreshToken: string,
 ): Promise<string | null> {
   const accessToken = await getAccessToken(clientID, clientSecret, refreshToken)
+
   const sdk = SpotifyApi.withAccessToken(clientID, {
     ...accessToken,
     refresh_token: refreshToken,
   })
-  const response = await sdk.player.getCurrentlyPlayingTrack()
 
-  if (!response || !response.item) return null
+  const playbackState =
+    (await sdk.player.getCurrentlyPlayingTrack()) as PlaybackState
 
-  const { name, artists } = response.item
+  if (!playbackState || !playbackState.item || !playbackState.is_playing) {
+    return null
+  }
+
+  const { name, artists } = playbackState.item as Track
+
   const artistNames = artists.map(artist => artist.name).join(', ')
-
   return `${name} - ${artistNames}`
 }
