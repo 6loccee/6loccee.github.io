@@ -1,0 +1,19 @@
+{
+	"header": {
+		"about": "/About me",
+		"header.projects": "/Projects",
+		"header.skills": "/Skills"
+	},
+	"about": {
+		"title": "About me",
+		"p1": "My name is Martín Aranda, though my friends call me Ryo. I'm an open-source developer from Rancagua, Chile, with a strong focus on web design and data management.",
+		"p2": "I began my journey as a programmer at the age of 10, using my mobile phone to create bots on Discord. Now, at 17, I'm finishing school and spend my free time coding for fun with my friends.",
+		"p3": "One of my personal goals is to be a role model and source of inspiration for fellow programmers. I dedicate myself to creating projects that not only advance open-source standards but also make a lasting impact on the developer community, setting a new benchmark for innovation.",
+		"p4": "With my first computer and two friends, I founded Developer House, a Discord community dedicated to programming, where I serve as CEO and which had over 600 active users. This project allowed me to meet new people who contributed to my personal development and growth as a programmer.",
+		"p5": "Everything I have learned is thanks to friends and online influencers who have significantly influenced my technical education."
+	},
+	"footer": {
+		"span1": "developed by",
+		"span2": "No reproducing – Spotify"
+	}
+}

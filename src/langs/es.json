@@ -1,0 +1,19 @@
+{
+	"header": {
+		"about": "/Acerca de mí",
+		"header.projects": "/Proyectos",
+		"header.skills": "/Habilidades"
+	},
+	"about": {
+		"title": "Acerca de mí",
+		"p1": "Mi nombre es Martín Aranda, aunque mis amigos me llaman Ryo. Soy desarrollador de código abierto de Rancagua, Chile, con un fuerte enfoque en diseño web y gestión de datos.",
+		"p2": "Comencé mi trayectoria como programador a los 10 años, usando mi teléfono móvil para crear bots en Discord. Ahora, con 17 años, estoy terminando la escuela y paso mi tiempo libre programando por diversión con mis amigos.",
+		"p3": "Uno de mis objetivos personales es ser un modelo a seguir y una fuente de inspiración para otros programadores. Me dedico a crear proyectos que no solo promuevan los estándares de código abierto, sino que también tengan un impacto duradero en la comunidad de desarrolladores, estableciendo un nuevo estándar de innovación.",
+		"p4": "Con mi primera computadora y dos amigos, fundé Developer House, una comunidad de Discord dedicada a la programación, donde soy CEO y que tenía más de 600 usuarios activos. Este proyecto me permitió conocer gente nueva que contribuyó a mi desarrollo personal y crecimiento como programador.",
+		"p5": "Todo lo que he aprendido se lo debo a amigos e influencers en línea que han influido significativamente en mi educación técnica."
+	},
+	"footer": {
+		"span1": "desarrollado por",
+		"span2": "No reproduzca - Spotify"
+	}
+}
