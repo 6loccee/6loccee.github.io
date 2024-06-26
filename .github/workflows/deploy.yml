@@ -20,7 +20,11 @@ jobs:
         uses: withastro/action@v2
         with:
           package-manager: pnpm@latest
-
+        env:
+          CLIENT_SPOTIFY_ID: ${{ secrets.CLIENT_SPOTIFY_ID }}
+          CLIENT_SPOTIFY_SECRET: ${{ secrets.CLIENT_SPOTIFY_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+          
   deploy:
     needs: build
     runs-on: ubuntu-latest
