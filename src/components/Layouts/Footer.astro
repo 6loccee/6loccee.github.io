@@ -1,6 +1,6 @@
 ---
 import SpotifyIcon from '@/icons/SpotifyIcon.astro'
-import { getCurrentlyPlayed } from '@/lib/utils'
+import { getCurrentlyPlayed } from '@/lib/spotify'
 
 const currentlyPlaying = await getCurrentlyPlayed(
   import.meta.env.CLIENT_SPOTIFY_ID,
