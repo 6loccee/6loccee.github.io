@@ -11,20 +11,22 @@ const { title, description } = Astro.props
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="Full Stack Developer, Web, Portfolio, Developer, DevOps, Fullstack">
   
+  <meta name="twitter:site" content="@martiin17jr"/>
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
   <meta name="twitter:image" content="/cover.webp">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@martiin17jr"/>
   
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
   <meta property="og:image" content="/cover.webp">
-  <meta property="og:url" content="https://6loccee.github.io/">
+  <meta property="og:url" content={Astro.url.href}>
   <meta property="og:type" content="website">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="640">
 
   <meta name="description" content={description}>
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href={Astro.url.href}/>
   
   <link rel="icon" href="/favicon.ico" media="(prefers-color-scheme:no-preference)">
   <link rel="icon" href="/favicon-dark.ico" media="(prefers-color-scheme:dark)">
