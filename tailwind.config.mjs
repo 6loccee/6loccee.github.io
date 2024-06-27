@@ -11,6 +11,7 @@ export default {
         'underline-color': 'hsl(var(--underline-color))',
         'underline-hover-color': 'hsl(var(--footer-hover-color))',
         'card-color': 'hsl(var(--card-color))',
+        'card-hover-color': 'hsl(var(--card-hover-color))',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

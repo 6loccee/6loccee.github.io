@@ -17,7 +17,8 @@
     --footer-color: var(--grey);
     --underline-color: var(--light-grey);
     --footer-hover-color: var(--black);
-    --card-color: var(--black);
+    --card-color: var(--light-grey);
+    --card-hover-color: var(--grey);
     color-scheme: light;
   }
 
@@ -27,7 +28,8 @@
     --footer-color: var(--soft-grey);
     --underline-color: var(--light-grey);
     --footer-hover-color: var(--white);
-    --card-color: var(--white);
+    --card-color: var(--grey);
+    --card-hover-color: var(--light-grey);
     color-scheme: dark;
   }
 }
