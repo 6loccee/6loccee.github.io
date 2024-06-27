@@ -35,10 +35,9 @@ const skills = [
   { Icon: VercelIcon, name: 'Vercel' },
 ]
 ---
-
 <section>
   <Title>Skills</Title>
-  <div class="grid grid-cols-5 gap-1">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1">
     {skills.map((skill) => (
       <div
         class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
