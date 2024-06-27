@@ -1,38 +1,41 @@
 ---
-import Underline from '@/ui/Underline.astro'
 import Title from '@/ui/Title.astro'
 import { calculateAge } from '@/lib/utils.ts'
 
 const age: number = calculateAge('19/04/2007')
 ---
+
 <div class="[&>p]:mb-4">
   <Title>About</Title>
   <p>
-    My name is <Underline bgColor="bg-blue-600">Martin Aranda</Underline>, although my friends call
-    me Ryo. I am an open source developer originally from
-    <Underline bgColor="bg-indigo-600" >Rancagua, Chile</Underline>, with a strong focus on <Underline bgColor="bg-violet-600">web design and data management</Underline
+    My name is <span class="bg-underline-color1">Martin Aranda</span>,
+    although my friends call me Ryo. I am an open source developer originally
+    from
+    <span class="bg-underline-color2">Rancagua, Chile</span>, with a
+    strong focus on <span class="bg-underline-color3"
+      >web design and data management</span
     >.
   </p>
   <p>
-    I started my journey as a programmer at the age of 10, using my mobile
-    phone to create bots on Discord. Now, at <Underline bgColor="bg-rose-600"
-    >{age} years old</Underline
-    >, I am <Underline bgColor="bg-amber-600">finishing school</Underline> and I spend my free time programming
-    to have fun with my friends.
+    I started my journey as a programmer at the age of 10, using my mobile phone
+    to create bots on Discord. Now, at <span class="bg-underline-color4"
+      >{age} years old</span
+    >, I am <span class="bg-underline-color5">finishing school</span> and I
+    spend my free time programming to have fun with my friends.
   </p>
   <p>
-    One of my personal goals is to be a reference and source of inspiration
-    for fellow programmers. <Underline bgColor="bg-cyan-600"
-    >I am dedicated to creating projects</Underline 
+    One of my personal goals is to be a reference and source of inspiration for
+    fellow programmers. <span class="bg-underline-color6"
+      >I am dedicated to creating projects</span
     > that not only advance open-source standards but also leave a lasting impact
     on the developer community, setting a new benchmark for innovation.
   </p>
   <p>
-    With my first computer and two friends I founded <Underline bgColor="bg-emerald-600"
-    >Developer House</Underline
-    >, a Discord community dedicated to programming, where I serve as CEO and
-    which had more than 600 active users. This project allowed me to meet new
-    people who contributed to my personal development and as a programmer.
+    With my first computer and two friends I founded <span class="bg-underline-color7">Developer House</span>
+    , a Discord community dedicated to programming, where I managed and
+    programmed the server with web and bot that had more than 600 active users.
+    This project allowed me to meet new people who contributed to my personal
+    development and as a programmer.
   </p>
   <p>
     I owe everything I have learned to friends and references on the Internet
