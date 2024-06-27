@@ -10,6 +10,7 @@ export default {
         'secondary-color': 'hsl(var(--footer-color))',
         'underline-color': 'hsl(var(--underline-color))',
         'underline-hover-color': 'hsl(var(--footer-hover-color))',
+        'card-color': 'hsl(var(--card-color))',
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
