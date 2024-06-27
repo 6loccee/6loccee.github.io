@@ -7,7 +7,7 @@
   --white: 0deg 100% 100%;
   --grey: 215deg 14% 34%;
   --light-grey: 218deg 11% 65%;
-  --soft-grey: 216deg 12% 84%;
+  --soft-grey: 220deg 13% 91%;
 }
 
 @layer base {
@@ -17,7 +17,7 @@
     --footer-color: var(--grey);
     --underline-color: var(--light-grey);
     --footer-hover-color: var(--black);
-    --card-color: var(--light-grey);
+    --card-color: var(--soft-grey);
     --card-hover-color: var(--grey);
     color-scheme: light;
   }
@@ -28,8 +28,8 @@
     --footer-color: var(--soft-grey);
     --underline-color: var(--light-grey);
     --footer-hover-color: var(--white);
-    --card-color: var(--grey);
-    --card-hover-color: var(--light-grey);
+    --card-color: var(--light-grey);
+    --card-hover-color: var(--soft-grey);
     color-scheme: dark;
   }
 }
