@@ -16,100 +16,36 @@ import TypescriptIcon from '@/skills/Typescript.astro'
 import VercelIcon from '@/skills/Vercel.astro'
 
 import Title from '@/ui/Title.astro'
+
+const skills = [
+  { Icon: AstroIcon, name: 'Astro' },
+  { Icon: AwsIcon, name: 'AWS' },
+  { Icon: BashIcon, name: 'Bash' },
+  { Icon: CssIcon, name: 'CSS' },
+  { Icon: DockerIcon, name: 'Docker' },
+  { Icon: GitIcon, name: 'Git' },
+  { Icon: HtmlIcon, name: 'HTML' },
+  { Icon: JavascriptIcon, name: 'Javascript' },
+  { Icon: MongoDBicon, name: 'MongoDB' },
+  { Icon: NextIcon, name: 'Next' },
+  { Icon: PythonIcon, name: 'Python' },
+  { Icon: ReactIcon, name: 'React' },
+  { Icon: TailwindIcon, name: 'Tailwind' },
+  { Icon: TypescriptIcon, name: 'Typescript' },
+  { Icon: VercelIcon, name: 'Vercel' },
+]
 ---
 
 <section>
   <Title>Skills</Title>
   <div class="grid grid-cols-5 gap-1">
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <AstroIcon />
-      <span class="text-xs ml-2">Astro</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <AwsIcon />
-      <span class="text-xs ml-2">AWS</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <BashIcon />
-      <span class="text-xs ml-2">Bash</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <CssIcon />
-      <span class="text-xs ml-2">CSS</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <DockerIcon />
-      <span class="text-xs ml-2">Docker</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <GitIcon />
-      <span class="text-xs ml-2">Git</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <HtmlIcon />
-      <span class="text-xs ml-2">HTML</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <JavascriptIcon />
-      <span class="text-xs ml-2">Javascript</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <MongoDBicon />
-      <span class="text-xs ml-2">MongoDB</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <NextIcon />
-      <span class="text-xs ml-2">Next</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <PythonIcon />
-      <span class="text-xs ml-2">Python</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <ReactIcon />
-      <span class="text-xs ml-2">React</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <TailwindIcon />
-      <span class="text-xs ml-2">Tailwind</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <TypescriptIcon />
-      <span class="text-xs ml-2">Typescript</span>
-    </div>
-    <div
-      class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
-    >
-      <VercelIcon />
-      <span class="text-xs ml-2">Vercel</span>
-    </div>
+    {skills.map((skill) => (
+      <div
+        class="flex items-center justify-start border px-2 py-3 border-card-color rounded mb-2"
+      >
+        <skill.Icon />
+        <span class="text-xs ml-2">{skill.name}</span>
+      </div>
+    ))}
   </div>
 </section>
