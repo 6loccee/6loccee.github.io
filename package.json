@@ -19,6 +19,7 @@
 		"@astrojs/tailwind": "^5.1.0",
 		"@spotify/web-api-ts-sdk": "^1.2.0",
 		"astro": "^4.10.3",
+		"astro-font": "^0.0.81",
 		"astro-robots-txt": "^1.0.0",
 		"astro-webmanifest": "^1.0.0",
 		"tailwindcss": "^3.4.4",

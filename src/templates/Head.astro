@@ -1,4 +1,6 @@
 ---
+import { AstroFont } from 'astro-font'
+
 interface Props {
   title?: string
   description?: string
@@ -32,4 +34,18 @@ const { title, description } = Astro.props
   <link rel="icon" href="/favicon-dark.ico" media="(prefers-color-scheme:dark)">
   <link rel="icon" href="/favicon-light.ico" media="(prefers-color-scheme:light)">
   <title>{title}</title>
+
+  <AstroFont
+    config={[
+      {
+        src: [],
+        preload: false,
+        display: 'swap',
+        selector: 'body',
+        name: 'Inter',
+        fallback: 'sans-serif',
+        googleFontsURL: 'https://fonts.googleapis.com/css2?family=Inter&display=swap',
+      },
+    ]}
+  />
 </head>
